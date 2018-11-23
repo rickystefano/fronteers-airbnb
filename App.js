@@ -16,7 +16,7 @@ class Home extends React.Component {
 class Profile extends React.Component {
   render() {
     return (
-      <View style={style.container}>
+      <View style={styles.container}>
         <Text>Profiel</Text>
       </View>
     )
@@ -54,7 +54,7 @@ export default createBottomTabNavigator(
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#ff0",
     alignItems: "center",
     justifyContent: "center"
   }
