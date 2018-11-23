@@ -1,27 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text } from 'react-native';
 import { createBottomTabNavigator } from "react-navigation";
 import { FontAwesome } from "@expo/vector-icons";
+import EStyleSheet from "react-native-extended-stylesheet";
 
-class Home extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Home</Text>
-      </View>
-    );
-  }
-}
-
-class Profile extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Profiel</Text>
-      </View>
-    )
-  }
-}
+import Home from "./Screens/Home";
+import Profile from "./Screens/Profile";
 
 export default createBottomTabNavigator(
   {
@@ -51,11 +35,11 @@ export default createBottomTabNavigator(
   }
 );
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ff0",
-    alignItems: "center",
-    justifyContent: "center"
-  }
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
