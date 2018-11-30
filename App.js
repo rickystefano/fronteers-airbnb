@@ -7,6 +7,8 @@ import EStyleSheet from "react-native-extended-stylesheet";
 import Home from "./Screens/Home";
 import Profile from "./Screens/Profile";
 
+EStyleSheet.build();
+
 export default createBottomTabNavigator(
   {
     Home, //ES6+
