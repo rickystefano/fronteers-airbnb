@@ -4,7 +4,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 
 export const Categories = ({ data }) => {
   return (<View>
-    <Text style={styles.subHeading}>Waar ben je naar op zoek?</Text>
+    <Text style={styles.subHeading}>What are you looking for?</Text>
     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       <FlatList
         style={styles.categoryList}

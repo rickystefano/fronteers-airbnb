@@ -5,7 +5,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 export const Listings = ({ data }) => {
   return (
     <View>
-      <Text style={styles.subHeading}>Woningen over de hele wereld</Text>
+      <Text style={styles.subHeading}>Accomodation across the world</Text>
       <ScrollView>
         <FlatList
           numColumns={2}
